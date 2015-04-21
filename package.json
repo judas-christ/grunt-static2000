@@ -6,6 +6,11 @@
   "author": {
     "name": "Daniel Hägglund"
   },
+  "files": [
+    "tasks",
+    "package.json",
+    "LICENSE"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/judas-christ/grunt-static2000.git"
