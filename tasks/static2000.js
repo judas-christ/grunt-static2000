@@ -56,6 +56,5 @@ module.exports = function(grunt) {
   //     // Print a success message.
   //     grunt.log.writeln('File "' + f.dest + '" created.');
   //   });
-  // });
-
+  });
 };
