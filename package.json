@@ -1,7 +1,6 @@
 {
   "name": "grunt-static2000",
   "description": "Grunt plugin for Static2000",
-  "version": "0.1.0",
   "homepage": "https://github.com/judas-christ/grunt-static2000",
   "author": {
     "name": "Daniel Hägglund"
@@ -43,5 +42,8 @@
   "keywords": [
     "gruntplugin",
     "static2000"
-  ]
+  ],
+  "dependencies": {
+    "vinyl-fs": "^1.0.0"
+  }
 }
