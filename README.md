@@ -109,6 +109,10 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+### Version 0.2.0
+
+Fixed bug where output files were not written.
+
 ### Version 0.1.0
 
 First release.
