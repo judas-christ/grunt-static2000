@@ -21,12 +21,7 @@ module.exports = function(grunt) {
       dest: 'www'
     });
 
-    //for some reason vinyl-fs fails to write files from static2000, do it from here instead
-    var dest = options.dest;
-    delete options.dest;
-
     static2000(options)
-      .pipe(fs.dest(dest))
       .on('end', done)
       .on('error', function(error) {
         grunt.log.error(error);

@@ -1,6 +1,6 @@
 # grunt-static2000
 
-> Grunt plugin for Static2000
+> Grunt plugin for [Static2000](https://github.com/judas-christ/static2000)
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
@@ -17,12 +17,6 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-static2000');
 ```
 
-You also need to install a template adapter. The recommended adapter is `static2000-jade` but if you prefer `nunjucks` templates, you can use ´static2000-nunjucks'.
-
-```shell
-npm install static2000-jade --save-dev
-```
-
 ## The "static2000" task
 
 ### Overview
@@ -35,7 +29,9 @@ grunt.initConfig({
       // Task-specific options go here.
     },
     your_target: {
-      // Target-specific file lists and/or options go here.
+      options: {
+        // Target-specific options go here.
+      }
     },
   },
 });
@@ -45,9 +41,9 @@ grunt.initConfig({
 
 #### options.templateAdapter
 Type: `String`
-Default value: `'static2000-jade'`
+Default value: `'jade'`
 
-The template adapter to use. For example [static2000-jade](https://github.com/judas-christ/static2000-jade) or [static2000-nunjucks](https://github.com/judas-christ/static2000-nunjucks). Please note that this adapter must be installed manually in addition to this plugin.
+The template adapter to use. Available options are `'jade'` and `'nunjucks'`. The template adapters are installed together with grunt-static2000.
 
 #### options.templates
 Type: `String`
@@ -94,7 +90,7 @@ grunt.initConfig({
 grunt.initConfig({
   static2000: {
     options: {
-      templateAdapter: 'static2000-nunjucks',
+      templateAdapter: 'nunjucks',
       templates: 'app/templates',
       content: 'app/content',
       dest: 'temp',
@@ -108,6 +104,10 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+
+### Version 0.2.1
+
+Using latest version of Static2000. Template adapters are now included.
 
 ### Version 0.2.0
 
