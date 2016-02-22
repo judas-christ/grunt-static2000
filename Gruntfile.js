@@ -2,7 +2,7 @@
  * grunt-static2000
  * https://github.com/Daniel/grunt-static2000
  *
- * Copyright (c) 2015 Daniel H�gglund
+ * Copyright (c) 2015 Daniel Hägglund
  * Licensed under the MIT license.
  */
 
